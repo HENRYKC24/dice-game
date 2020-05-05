@@ -23,13 +23,13 @@ function rollDice2() {
   btn1.removeAttribute('disabled');
   var h1 = document.querySelector('h1');
   if ( player1Score === player2Score ) {
-    h1.textContent = 'That\'s a tie!';
+    h1.innerHTML = 'That\'s a tie!';
   }
   else if ( player1Score > player2Score ) {
-    h1.textContent = 'Player 1 Wins!';
+    h1.innerHTML = '<i class="fas fa-flag-checkered"></i> Player 1 Wins!';
   }
   else {
-    h1.textContent = 'Player 2 Wins!';
+    h1.innerHTML = 'Player 2 Wins! <i class="fas fa-flag-checkered"></i>';
   }
 };
 rollDice1();
