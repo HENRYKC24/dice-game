@@ -30,6 +30,7 @@ p {
   font-size: 2rem;
   color: #4ECCA3;
   font-family: 'Indie Flower', cursive;
+  margin: 0;
 }
 
 img {
@@ -84,4 +85,16 @@ footer {
   .roll-double-btn, .roll-btn {
     font-size: 1.2rem;
   }
+}
+
+@keyframes rotate {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+
+.rotate {
+  animation-name: rotate;
+  animation-duration: 0.3s;
+  animation-iteration-count: 5;
+  animation-timing-function: linear;
 }
