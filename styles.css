@@ -14,6 +14,10 @@ body {
   background-color: #393E46;
 }
 
+.fa-flag-checkered {
+  color: rgb(172, 20, 20);
+}
+
 h1 {
   margin: 30px;
   font-family: 'Lobster', cursive;
@@ -39,9 +43,33 @@ img {
   border: none;
   cursor: pointer;
   height: 60px;
-  background-color: rgb(212, 18, 18);
+  background-color: #fff;
   font-size: 2rem;
+  color: rgb(172, 20, 20);
+  margin-bottom: 3%;
+}
+
+.roll-btn:hover, .roll-double-btn:hover{
+  background-color: rgb(20, 13, 13);
   color: #fff;
+}
+
+.roll-btn:active, .roll-double-btn:active{
+  background-color: rgb(172, 20, 20);
+  color: #fff;
+}
+
+.roll-double-btn {
+  width: 60%;
+  font-size: 50%;
+  border-radius: 20%;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  height: 60px;
+  background-color:#fff;
+  font-size: 2rem;
+  color: rgb(172, 20, 20);
 }
 
 footer {
@@ -50,4 +78,10 @@ footer {
   text-align: center;
   font-family: 'Indie Flower', cursive;
 
+}
+
+@media (max-width: 424px) {
+  .roll-double-btn, .roll-btn {
+    font-size: 1.2rem;
+  }
 }
