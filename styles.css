@@ -1,5 +1,5 @@
 .container {
-  width: 80%;
+  width: 100%;
   margin: auto;
   text-align: center;
 }
@@ -7,7 +7,9 @@
 .dice {
   text-align: center;
   display: inline-block;
-
+  width: 30%;
+  margin:0;
+  padding: 0;
 }
 
 body {
@@ -18,27 +20,44 @@ body {
   color: rgb(172, 20, 20);
 }
 
+.title-container {
+  position: sticky;
+  top: 0px;
+  background-color: #393E46;
+}
+
 h1 {
   margin: 0 30px;
   font-family: 'Lobster', cursive;
   text-shadow: 5px 0 #232931;
-  font-size: 4rem;
+  font-size: 10vw;
   color: #4ECCA3;
 }
+
+#num {
+  color: #fff;
+}
+/* 
+.dice-all {
+  width: 70%;
+  margin: auto;
+} */
 
 p {
   font-size: 2rem;
   color: #4ECCA3;
   font-family: 'Indie Flower', cursive;
   margin: 0;
+  padding:0;
 }
 
 img {
   width: 80%;
+  margin: 0;
 }
 
 .roll-btn {
-  width: 60%;
+  /* width: 80%; */
   border-radius: 100%;
   outline: none;
   border: none;
@@ -81,10 +100,25 @@ footer {
 
 }
 
-@media (max-width: 424px) {
-  .roll-double-btn, .roll-btn {
-    font-size: 1.2rem;
+@media (max-width: 732px) {
+   .roll-btn {
+    font-size: 1.3rem;
   }
+}
+
+@media (max-width: 496px) {
+  .roll-btn {
+   font-size: 1.1rem;
+ }
+}
+
+@media (max-width: 422px) {
+  .roll-btn {
+   font-size: 1rem;
+ }
+ .roll-double-btn {
+   font-size: 1.8rem;
+ }
 }
 
 @keyframes rotate {
@@ -94,7 +128,7 @@ footer {
 
 .rotate {
   animation-name: rotate;
-  animation-duration: 0.3s;
-  animation-iteration-count: 5;
+  animation-duration: 0.6s;
+  animation-iteration-count: 3;
   animation-timing-function: linear;
 }

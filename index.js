@@ -5,7 +5,8 @@ var btn2 = document.querySelector('#btn2');
 var doubleBtn = document.querySelector('#doubleBtn');
 var player1Score = 0;
 var player2Score = 0;
-var h1 = document.querySelector('h1');
+var h1 = document.querySelector('#title');
+var num = document.querySelector('#num');
 function randNum() {
   return Math.floor(Math.random() * 6) + 1;
 }
@@ -13,6 +14,8 @@ function randNum() {
 // element.addEventListener("animationend", callfunction,false);
 // element.addEventListener("oanimationend", callfunction,false);
 function animate1() {
+  h1.innerHTML = 'KCSoftSolutions';
+  num.textContent = 'Player 1 played...';
   img1.setAttribute('src', 'images/dice5.png');
   img1.classList.add('rotate');
 }
@@ -21,6 +24,7 @@ img1.addEventListener('animationend', rollDice1);
 img1.addEventListener('oanimationend', rollDice1);
 
 function animate2() {
+  num.textContent = 'Getting scores ready...';
   img2.setAttribute('src', 'images/dice5.png');
   img2.classList.add('rotate');
 }
@@ -35,7 +39,8 @@ function rollDice1() {
   img1.setAttribute('src', image);
   btn1.setAttribute('disabled', 'disabled');
   btn2.removeAttribute('disabled');
-  h1.innerHTML = 'Waiting for Player 2...';
+  h1.innerHTML = 'KCSoftSolutions';
+  num.textContent = 'Player 2 it\'s your turn';
 }
 function rollDice2() {
   img1.classList.remove('rotate');
@@ -54,6 +59,7 @@ function rollDice2() {
   else {
     h1.innerHTML = 'Player 2 Wins! <i class="fas fa-flag-checkered"></i>';
   }
+  num.textContent = 'Player1 = ' + player1Score + ' : Player2 = ' + player2Score;
 };
 animate1();
 animate2();
