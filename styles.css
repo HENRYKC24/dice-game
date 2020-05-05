@@ -1,5 +1,5 @@
 .container {
-  width: 70%;
+  width: 80%;
   margin: auto;
   text-align: center;
 }
@@ -30,6 +30,18 @@ p {
 
 img {
   width: 80%;
+}
+
+.roll-btn {
+  width: 60%;
+  border-radius: 100%;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  height: 60px;
+  background-color: rgb(212, 18, 18);
+  font-size: 2rem;
+  color: #fff;
 }
 
 footer {
