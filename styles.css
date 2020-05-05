@@ -19,10 +19,10 @@ body {
 }
 
 h1 {
-  margin: 30px;
+  margin: 0 30px;
   font-family: 'Lobster', cursive;
   text-shadow: 5px 0 #232931;
-  font-size: 8rem;
+  font-size: 4rem;
   color: #4ECCA3;
 }
 
