@@ -81,9 +81,9 @@ img {
 }
 
 .roll-double-btn {
-  width: 60%;
+  /* width: 60%; */
   font-size: 50%;
-  border-radius: 20%;
+  border-radius: 100%;
   outline: none;
   border: none;
   cursor: pointer;
