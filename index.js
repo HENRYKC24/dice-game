@@ -18,6 +18,8 @@ function animate1() {
   num.textContent = 'Player 1 played...';
   img1.setAttribute('src', 'images/dice5.png');
   img1.classList.add('rotate');
+  var diceSound = new Audio('dice.wav');
+  diceSound.play();
 }
 img1.addEventListener('webkitAnimationEnd', rollDice1);
 img1.addEventListener('animationend', rollDice1);
@@ -27,6 +29,8 @@ function animate2() {
   num.textContent = 'Getting scores ready...';
   img2.setAttribute('src', 'images/dice5.png');
   img2.classList.add('rotate');
+  var diceSound = new Audio('dice.wav');
+  diceSound.play();
 }
 img2.addEventListener('webkitAnimationEnd', rollDice2);
 img2.addEventListener('animationend', rollDice2);
@@ -59,7 +63,7 @@ function rollDice2() {
   else {
     h1.innerHTML = 'Player 2 Wins! <i class="fas fa-flag-checkered"></i>';
   }
-  num.textContent = 'Player1 = ' + player1Score + ' : Player2 = ' + player2Score;
+  num.textContent = 'Player1 = ' + player1Score + ' : Player2 = ' + player2Score + '👆'; 
 };
 animate1();
 animate2();

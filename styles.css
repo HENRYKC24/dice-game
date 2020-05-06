@@ -36,6 +36,7 @@ h1 {
 
 #num {
   color: #fff;
+  font-size: 2rem;
 }
 /* 
 .dice-all {
@@ -128,7 +129,7 @@ footer {
 
 .rotate {
   animation-name: rotate;
-  animation-duration: 0.6s;
-  animation-iteration-count: 3;
+  animation-duration: 0.5s;
+  animation-iteration-count: 2;
   animation-timing-function: linear;
 }
